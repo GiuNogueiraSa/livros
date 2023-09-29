@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: 4fr ;
+        grid-template-rows: 0.02.fr 0.02fr 0.04fr 1fr 0.01fr;
+        grid-template-areas: 
+         "h"                
+         "a "
+         "d "
+         "m"
+         "f";
+    }
+    
+/* RESPONSIVIDADE para telas com um máximo de 780px  */
+
+}

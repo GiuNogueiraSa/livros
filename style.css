@@ -1,0 +1,145 @@
+/* FONTE DO SITE */
+*{font-family: 'Raleway', sans-serif;} /* fonte "universal" usada no site  */
+body{
+    max-width: 1400px; /* maximo de tela ocupada */
+    margin: auto;
+    background-color: #122433;
+}
+
+/* ESTILO DAS TAGS PRINCIPAIS */
+header, aside, main, 
+#dados, footer{
+    background-color: #e1e6eb;
+    padding: 10px;
+    border-radius: 1px; /* arredondamento */
+    /* margin: 2; */
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); SOMBRA - tirei*/
+}
+/* GRID */
+.container{
+    display: grid;
+     /* gap seria para o espaçamento entre os blocos */
+       grid-template-columns: 2.5fr 1fr  ; /* colunas, qunatidade e tamanho*/
+       grid-template-rows:    0.1fr 0.1fr 1fr 1fr 0.3fr; /* linhas, quantidade e tamanho */
+       grid-template-areas: 
+         "h h"
+         "a a"
+         "m d"
+         "m d"
+         "f f";
+}
+
+/* grid-area nomeia a tag para colocar no grid do css *
+
+/* ESTILO HEADER */
+header{grid-area: h;} 
+
+
+/* ESTILO ASIDE (MENU) */
+aside{grid-area: a; background-color: #708aa0;}
+.menu{font-size: 28px;}
+.menu-custom-bg {
+    background-color: #708aa0; /* Define a cor  */
+  }
+  /* FIM ESTILO MENU */
+
+  /* ESTILO MAIN (CORPO DO TEXTO) */
+main{
+    grid-area: m;
+    font-size: 16px;
+   
+}
+.texto{
+    text-align: justify; /* justificando o texto */
+    margin: 15px;
+}
+/* FIM ESTILO MAIN */
+/* ESTILO SECTION (DADOS DO LIVRO) */
+#dados{grid-area: d; }
+/* estilo da imagem dos #dados */
+#dados img{ 
+    width: 80%; 
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/* estilo das tags da area de informações */
+.info-titulo{
+    text-align: justify;
+     margin: 15px; /*  margem do titulo*/
+}
+.texto-img-info{
+    text-align: center; /* deixando a imagem centralizada */
+    line-height: 30px; /* espaçamento entre as linhas */
+    
+}
+.texto-info{
+    text-align: justify;
+     margin: 15px;
+}
+.livros-autora-titulo{ margin-top: 25px; margin-bottom: 25px;}
+.livros{
+        text-align: justify; /* texto justificado */
+        margin: 15px;
+}
+/* FIM ESTILO SECTION */
+
+/* ESTILO FOOTER */
+footer{grid-area: f;}
+/*  */
+footer{
+    padding: 5px ; 
+    font-size: 16px; 
+    text-align: center;
+    line-height: 25px; /*  espaçamento entre as linhas*/
+    background-color: #122433; /*cor de fundo do rodapé  */
+    
+
+
+}
+.footer-container{
+    color: #ffffff; /*  cor das letras*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: justify; /* deixa o texto justificado */
+    margin: 5px;
+    margin-left:20px;
+    /* estilo dos links */
+}
+
+.footer-section{
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;  
+    /* estilo dos contatatos*/  
+}
+     /* estilo email */
+#email a{
+    margin-right: 10px;
+    color: #fdfdfd; /* cor do email */
+ }
+ #email a:hover{
+    color: #232323; /*  cor do email quando passa o mouse por cima dele*/
+
+}
+    /* estlilo dos links */
+.links{
+    /*  margem dos links*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.social-links a{
+    /* margin-right: 10px; */
+   
+    color: #fdfdfd; /*  cor do link */
+}
+.social-links a:hover{
+    color: #707070; /* cor do link quando passa o mouse por cima dele */
+
+}
+.footer-bottom{color: #ffffff;}
+
+/* FIM ESTILO FOOTER */
+/*  */
